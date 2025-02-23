@@ -224,6 +224,10 @@ if st.sidebar.button("Hitung Indeks Performans"):
     else:
         st.info("System memerlukan lebih banyak data untuk meningkatkan akurasi prediksi.")
 
+    # Add a refresh button
+    if st.button("Refresh"):
+        st.rerun()
+
 
 # Run the Streamlit app
 if __name__ == "__main__":

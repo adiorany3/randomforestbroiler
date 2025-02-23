@@ -236,7 +236,7 @@ if __name__ == "__main__":
 # Footer
 st.markdown("---")
 current_year = datetime.datetime.now().year
-st.text(f"© {current_year} Developed by: Galuh Adi Insani. All rights reserved.")
+st.text(f"© {current_year} Developed by: Galuh Adi Insani with ❤️. All rights reserved.")
 
 hide_st_style = """
             <style>

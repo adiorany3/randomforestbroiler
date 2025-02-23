@@ -224,16 +224,6 @@ if st.sidebar.button("Hitung Indeks Performans"):
     else:
         st.info("System memerlukan lebih banyak data untuk meningkatkan akurasi prediksi.")
 
-if st.sidebar.button("Hapus Data"):
-    # Clear all Streamlit cache
-    st.cache_data.clear()
-    Age = 0
-    FCR = 0.0
-    Ayam_Dipelihara = 0
-    persen_Live_Bird = 50.0
-    Total_Body_Weight = 10.0
-    st.rerun()
-
 # Run the Streamlit app
 if __name__ == "__main__":
     today = datetime.date.today()

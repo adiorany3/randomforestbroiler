@@ -11,6 +11,8 @@ from PIL import Image  # Import the PIL library
 import requests
 import html
 
+st.set_page_config(page_title="IP Broiler", page_icon="🐔")
+
 # Access your bot token and chat ID from Streamlit secrets
 BOT_TOKEN = st.secrets["bot_token"]
 CHAT_ID = st.secrets["chat_id"]

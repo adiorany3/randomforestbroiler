@@ -163,7 +163,7 @@ if st.sidebar.button("Hitung Indeks Performans"):
             today = datetime.date.today()
             ADG_actual = ((Total_Body_Weight/Live_Bird)*1000) if Live_Bird > 0 else 0  # Calculate ADG_actual, avoid division by zero
             feed = FCR * Total_Body_Weight
-            new_data = pd.DataFrame([[Age, today, Total_Body_Weight, FCR, Live_Bird, Ayam_Dipelihara, persen_Live_Bird, actual_ip, prediction, culling, ADG_actual, feed]],
+            new_data = pd.DataFrame([[Age, today, Total_Body_Weight, Live_Bird, Ayam_Dipelihara, persen_Live_Bird, actual_ip, prediction, culling, ADG_actual, feed, FCR]],
                                     columns=['Age', 'Date', 'Total_Body_Weight', 'Live_Bird', 'Ayam_Dipelihara', 'persen_Live_Bird', 'IP_actual', 'IP', 'Culling', 'ADG_actual', 'Feed', 'FCR_actual'])
             try:
                 existing_data = pd.read_csv('prediksi.csv')

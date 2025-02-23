@@ -77,11 +77,11 @@ div.stButton > button:first-child {
 
 # Streamlit input widgets for prediction
 st.sidebar.header("Masukkan Parameter Produksi Broiler")
-Age = st.sidebar.number_input("Umur Ayam (Hari)", min_value=0)
+Age = st.sidebar.number_input("Umur Ayam (Hari)", min_value=1)
 FCR = st.sidebar.number_input("FCR", min_value=0.0)
 Ayam_Dipelihara = st.sidebar.number_input("Jumlah Ayam Dipelihara (ekor)", min_value=0)
-persen_Live_Bird = st.sidebar.number_input("Persentase Ayam Hidup (%)", min_value=0.0, max_value=100.0)
-Total_Body_Weight = st.sidebar.number_input("Total Berat Badan Panen (kg)", min_value=0.0)
+persen_Live_Bird = st.sidebar.number_input("Persentase Ayam Hidup (%)", min_value=50.0, max_value=100.0)
+Total_Body_Weight = st.sidebar.number_input("Total Berat Badan Panen (kg)", min_value=10.0)
 
 # Predict button
 if st.sidebar.button("Hitung Indeks Performans"):
